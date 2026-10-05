@@ -43,12 +43,14 @@ def notes(t):
         sources=''.join(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["label"])}</a></li>' for s in n.get('sources',[]))
         items.append(f'<details id="note-{e(n["id"])}"><summary>{e(label)}</summary><p>{e(n["body"])}</p><ul>{sources}</ul></details>')
     sources=' · '.join(f'<a href="{e(s["url"])}">{e(s["label"])}</a>' for s in t['lyricSources'])
-    return '<section class="static-notes" aria-label="Notes and sources"><h2>Notes</h2>'+''.join(items)+f'<p>Independent, AI-assisted English translation. Not artist-authorized. Sources: {sources}.</p></section>'
+    return '<section class="static-notes" aria-label="Notes and sources"><h2>Notes</h2>'+(f'<p>{e(t["intro"])}</p>' if t.get('intro') else '')+''.join(items)+f'<p>Independent, AI-assisted English translation. Not artist-authorized. Sources: {sources}.</p></section>'
 def head_metadata(page_title,desc,url,schema):
     return f'<link rel="canonical" href="{e(url)}"><meta property="og:type" content="website"><meta property="og:site_name" content="Jackzebra Notes"><meta property="og:title" content="{e(page_title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{e(url)}"><script id="page-schema" type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace('<','\\u003c')+'</script>'
 template=(ROOT/'src/song.html').read_text()
 for t in ALBUM['tracks']:
     doc=re.sub(r'<title>.*?</title>',lambda _:f'<title>{e(title(t))}</title>',template)
+    context=''.join('<p>'+e(n['body'])+'</p><p class="small">'+' · '.join(f'<a href="{e(source["url"])}" target="_blank" rel="noopener">{e(source["label"])}</a>' for source in n['sources'])+'</p>' for n in ALBUM['researchContext'])
+    doc=replace_inner(doc,'div','album-context',context)
     doc=re.sub(r'<meta name="description"[^>]+>',lambda _:f'<meta name="description" content="{e(description(t))}">',doc)
     schema={'@context':'https://schema.org','@type':'WebPage','name':title(t),'url':ORIGIN+path(t),'inLanguage':['en','zh'],'about':{'@type':'MusicRecording','name':t['title'],'isrcCode':t['isrc'],'byArtist':{'@type':'MusicGroup','name':'Jackzebra'},'inAlbum':{'@type':'MusicAlbum','name':ALBUM['title']}}}
     doc=doc.replace('</head>',head_metadata(title(t),description(t),ORIGIN+path(t),schema)+'</head>')

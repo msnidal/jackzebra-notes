@@ -1,0 +1,1048 @@
+{
+  "date": "2026-10-04",
+  "method": "All 55 tracks read against their existing bilingual lyrics. Phrase-level linguistic editing, comparison within the mixtape and earlier catalog, and external reference research. Existing lyric wording and audio timings preserved.",
+  "tracks": [
+    {
+      "id": 1,
+      "title": "Sour",
+      "before": 10,
+      "after": 15,
+      "added": 5,
+      "removed": 0,
+      "rewritten": 7,
+      "words": 805
+    },
+    {
+      "id": 2,
+      "title": "Blessed",
+      "before": 10,
+      "after": 14,
+      "added": 4,
+      "removed": 0,
+      "rewritten": 8,
+      "words": 772
+    },
+    {
+      "id": 3,
+      "title": "Sunshine",
+      "before": 9,
+      "after": 15,
+      "added": 6,
+      "removed": 0,
+      "rewritten": 5,
+      "words": 780
+    },
+    {
+      "id": 4,
+      "title": "Discipline",
+      "before": 6,
+      "after": 13,
+      "added": 8,
+      "removed": 1,
+      "rewritten": 1,
+      "words": 636
+    },
+    {
+      "id": 5,
+      "title": "Coffin Baby",
+      "before": 9,
+      "after": 17,
+      "added": 9,
+      "removed": 1,
+      "rewritten": 7,
+      "words": 905
+    },
+    {
+      "id": 6,
+      "title": "Poker Face",
+      "before": 10,
+      "after": 15,
+      "added": 5,
+      "removed": 0,
+      "rewritten": 6,
+      "words": 738
+    },
+    {
+      "id": 7,
+      "title": "Debt",
+      "before": 6,
+      "after": 13,
+      "added": 7,
+      "removed": 0,
+      "rewritten": 4,
+      "words": 657
+    },
+    {
+      "id": 8,
+      "title": "Doge",
+      "before": 6,
+      "after": 8,
+      "added": 2,
+      "removed": 0,
+      "rewritten": 4,
+      "words": 431
+    },
+    {
+      "id": 9,
+      "title": "Voices",
+      "before": 4,
+      "after": 12,
+      "added": 8,
+      "removed": 0,
+      "rewritten": 3,
+      "words": 611
+    },
+    {
+      "id": 10,
+      "title": "Cube",
+      "before": 8,
+      "after": 14,
+      "added": 6,
+      "removed": 0,
+      "rewritten": 4,
+      "words": 716
+    },
+    {
+      "id": 11,
+      "title": "Like A Duck To Water",
+      "before": 6,
+      "after": 10,
+      "added": 4,
+      "removed": 0,
+      "rewritten": 3,
+      "words": 531
+    },
+    {
+      "id": 12,
+      "title": "Kai",
+      "before": 8,
+      "after": 14,
+      "added": 6,
+      "removed": 0,
+      "rewritten": 3,
+      "words": 712
+    },
+    {
+      "id": 13,
+      "title": "Grey",
+      "before": 9,
+      "after": 15,
+      "added": 7,
+      "removed": 1,
+      "rewritten": 4,
+      "words": 748
+    },
+    {
+      "id": 14,
+      "title": "Jianghu",
+      "before": 9,
+      "after": 16,
+      "added": 7,
+      "removed": 0,
+      "rewritten": 8,
+      "words": 854
+    },
+    {
+      "id": 15,
+      "title": "Haribo",
+      "before": 5,
+      "after": 8,
+      "added": 3,
+      "removed": 0,
+      "rewritten": 4,
+      "words": 421
+    },
+    {
+      "id": 16,
+      "title": "Whatever Whatever",
+      "before": 9,
+      "after": 15,
+      "added": 6,
+      "removed": 0,
+      "rewritten": 6,
+      "words": 790
+    },
+    {
+      "id": 17,
+      "title": "Monoplay",
+      "before": 12,
+      "after": 23,
+      "added": 12,
+      "removed": 1,
+      "rewritten": 9,
+      "words": 1225
+    },
+    {
+      "id": 18,
+      "title": "Stab",
+      "before": 7,
+      "after": 14,
+      "added": 7,
+      "removed": 0,
+      "rewritten": 4,
+      "words": 718
+    },
+    {
+      "id": 19,
+      "title": "Hitman",
+      "before": 8,
+      "after": 13,
+      "added": 5,
+      "removed": 0,
+      "rewritten": 5,
+      "words": 672
+    },
+    {
+      "id": 20,
+      "title": "The Lone Wolf",
+      "before": 7,
+      "after": 13,
+      "added": 6,
+      "removed": 0,
+      "rewritten": 4,
+      "words": 621
+    },
+    {
+      "id": 21,
+      "title": "Anti Social Social Club",
+      "before": 7,
+      "after": 14,
+      "added": 8,
+      "removed": 1,
+      "rewritten": 4,
+      "words": 692
+    },
+    {
+      "id": 22,
+      "title": "Throat",
+      "before": 4,
+      "after": 9,
+      "added": 6,
+      "removed": 1,
+      "rewritten": 2,
+      "words": 456
+    },
+    {
+      "id": 23,
+      "title": "Bedbug Party",
+      "before": 9,
+      "after": 16,
+      "added": 7,
+      "removed": 0,
+      "rewritten": 1,
+      "words": 760
+    },
+    {
+      "id": 24,
+      "title": "Self Pity",
+      "before": 7,
+      "after": 12,
+      "added": 5,
+      "removed": 0,
+      "rewritten": 2,
+      "words": 581
+    },
+    {
+      "id": 25,
+      "title": "Bakery Session",
+      "before": 3,
+      "after": 9,
+      "added": 6,
+      "removed": 0,
+      "rewritten": 2,
+      "words": 454
+    },
+    {
+      "id": 26,
+      "title": "Fox",
+      "before": 8,
+      "after": 15,
+      "added": 7,
+      "removed": 0,
+      "rewritten": 2,
+      "words": 730
+    },
+    {
+      "id": 27,
+      "title": "LMFAO",
+      "before": 3,
+      "after": 6,
+      "added": 3,
+      "removed": 0,
+      "rewritten": 0,
+      "words": 258
+    },
+    {
+      "id": 28,
+      "title": "Snatch",
+      "before": 8,
+      "after": 14,
+      "added": 7,
+      "removed": 1,
+      "rewritten": 2,
+      "words": 711
+    },
+    {
+      "id": 29,
+      "title": "Sanmao",
+      "before": 4,
+      "after": 8,
+      "added": 5,
+      "removed": 1,
+      "rewritten": 1,
+      "words": 398
+    },
+    {
+      "id": 30,
+      "title": "Dumpling",
+      "before": 6,
+      "after": 11,
+      "added": 5,
+      "removed": 0,
+      "rewritten": 2,
+      "words": 547
+    },
+    {
+      "id": 31,
+      "title": "Topboy",
+      "before": 10,
+      "after": 17,
+      "added": 8,
+      "removed": 1,
+      "rewritten": 2,
+      "words": 814
+    },
+    {
+      "id": 32,
+      "title": "Kneel",
+      "before": 6,
+      "after": 13,
+      "added": 7,
+      "removed": 0,
+      "rewritten": 1,
+      "words": 630
+    },
+    {
+      "id": 33,
+      "title": "Crosswalk",
+      "before": 8,
+      "after": 16,
+      "added": 8,
+      "removed": 0,
+      "rewritten": 0,
+      "words": 760
+    },
+    {
+      "id": 34,
+      "title": "Lemonade",
+      "before": 4,
+      "after": 11,
+      "added": 7,
+      "removed": 0,
+      "rewritten": 1,
+      "words": 566
+    },
+    {
+      "id": 35,
+      "title": "Rabbit",
+      "before": 6,
+      "after": 11,
+      "added": 5,
+      "removed": 0,
+      "rewritten": 2,
+      "words": 494
+    },
+    {
+      "id": 36,
+      "title": "Soymilk",
+      "before": 6,
+      "after": 12,
+      "added": 6,
+      "removed": 0,
+      "rewritten": 1,
+      "words": 583
+    },
+    {
+      "id": 37,
+      "title": "Book",
+      "before": 5,
+      "after": 9,
+      "added": 6,
+      "removed": 2,
+      "rewritten": 0,
+      "words": 451
+    },
+    {
+      "id": 38,
+      "title": "All In",
+      "before": 7,
+      "after": 13,
+      "added": 7,
+      "removed": 1,
+      "rewritten": 6,
+      "words": 740
+    },
+    {
+      "id": 39,
+      "title": "Mold Prize",
+      "before": 4,
+      "after": 11,
+      "added": 8,
+      "removed": 1,
+      "rewritten": 3,
+      "words": 626
+    },
+    {
+      "id": 40,
+      "title": "Im Tired",
+      "before": 6,
+      "after": 11,
+      "added": 5,
+      "removed": 0,
+      "rewritten": 6,
+      "words": 613
+    },
+    {
+      "id": 41,
+      "title": "Macaron",
+      "before": 11,
+      "after": 16,
+      "added": 5,
+      "removed": 0,
+      "rewritten": 11,
+      "words": 882
+    },
+    {
+      "id": 42,
+      "title": "Life Life Life",
+      "before": 13,
+      "after": 18,
+      "added": 7,
+      "removed": 2,
+      "rewritten": 11,
+      "words": 1028
+    },
+    {
+      "id": 43,
+      "title": "Ashtray",
+      "before": 8,
+      "after": 15,
+      "added": 8,
+      "removed": 1,
+      "rewritten": 7,
+      "words": 869
+    },
+    {
+      "id": 44,
+      "title": "Oleander",
+      "before": 2,
+      "after": 8,
+      "added": 6,
+      "removed": 0,
+      "rewritten": 2,
+      "words": 463
+    },
+    {
+      "id": 45,
+      "title": "Curse",
+      "before": 7,
+      "after": 12,
+      "added": 5,
+      "removed": 0,
+      "rewritten": 7,
+      "words": 686
+    },
+    {
+      "id": 46,
+      "title": "Ghost Dog",
+      "before": 16,
+      "after": 25,
+      "added": 10,
+      "removed": 1,
+      "rewritten": 15,
+      "words": 1415
+    },
+    {
+      "id": 47,
+      "title": "Tonight",
+      "before": 3,
+      "after": 8,
+      "added": 5,
+      "removed": 0,
+      "rewritten": 3,
+      "words": 441
+    },
+    {
+      "id": 48,
+      "title": "Numb",
+      "before": 5,
+      "after": 9,
+      "added": 4,
+      "removed": 0,
+      "rewritten": 5,
+      "words": 506
+    },
+    {
+      "id": 49,
+      "title": "Emperor",
+      "before": 8,
+      "after": 13,
+      "added": 5,
+      "removed": 0,
+      "rewritten": 8,
+      "words": 748
+    },
+    {
+      "id": 50,
+      "title": "Morning",
+      "before": 6,
+      "after": 13,
+      "added": 7,
+      "removed": 0,
+      "rewritten": 6,
+      "words": 703
+    },
+    {
+      "id": 51,
+      "title": "Never Give Up",
+      "before": 3,
+      "after": 5,
+      "added": 3,
+      "removed": 1,
+      "rewritten": 2,
+      "words": 277
+    },
+    {
+      "id": 52,
+      "title": "Mirrors",
+      "before": 6,
+      "after": 13,
+      "added": 7,
+      "removed": 0,
+      "rewritten": 6,
+      "words": 704
+    },
+    {
+      "id": 53,
+      "title": "Ume",
+      "before": 11,
+      "after": 17,
+      "added": 6,
+      "removed": 0,
+      "rewritten": 11,
+      "words": 968
+    },
+    {
+      "id": 54,
+      "title": "Inspiration",
+      "before": 13,
+      "after": 20,
+      "added": 7,
+      "removed": 0,
+      "rewritten": 13,
+      "words": 1112
+    },
+    {
+      "id": 55,
+      "title": "Sweet",
+      "before": 12,
+      "after": 22,
+      "added": 10,
+      "removed": 0,
+      "rewritten": 12,
+      "words": 1256
+    }
+  ],
+  "issues": [
+    {
+      "trackId": 4,
+      "line": 20,
+      "kind": "transcript",
+      "text": "睡觉的时候你梦到后",
+      "detail": "Awkward supplied wording; current English imposes an incomplete after-clause. Keep flagged for independent audio/transcript review, outside the interpretive annotation layer."
+    },
+    {
+      "trackId": 5,
+      "line": 36,
+      "kind": "transcript",
+      "text": "世界大草帽",
+      "detail": "This strange wording may conceal a familiar phrase but no source confirms a replacement. Do not build an interpretation around straw hats or silently replace with 草台班子. Requires audio/source adjudication."
+    },
+    {
+      "trackId": 13,
+      "line": 9,
+      "kind": "transcript",
+      "text": "口罩消毒水清先备好",
+      "detail": "清先 is anomalous in this instruction. Do not build cultural claims around a guessed correction; preserve audio-review issue."
+    },
+    {
+      "trackId": 14,
+      "line": 27,
+      "kind": "transcript",
+      "text": "水帘洞底下掀开",
+      "detail": "Water Curtain Cave identification secure; remaining grammar/object unresolved. Annotation now attaches only to the supported place name and does not interpret what is lifted."
+    },
+    {
+      "trackId": 17,
+      "line": 14,
+      "kind": "transcript",
+      "text": "脑瘤学生",
+      "detail": "Anomalous phrase remains unresolved; do not normalize to a guessed insult or identity. Needs audio review."
+    },
+    {
+      "trackId": 17,
+      "line": 71,
+      "kind": "transcript",
+      "text": "请了你最喜欢的固定资产",
+      "detail": "Fixed assets is a stable accounting phrase, but this full line’s referent is not clear. Removed annotation whose sole content was uncertainty; retained as research issue."
+    },
+    {
+      "trackId": 22,
+      "line": 36,
+      "kind": "transcript",
+      "detail": "狗逼样的 differs from 狗逼养的 in the earlier repeated verse. Remove standalone quality-warning note; verify this sung phrase in an audio pass before normalizing."
+    },
+    {
+      "trackId": 23,
+      "line": 22,
+      "kind": "translation",
+      "detail": "牌太大了 likely concerns status/big shot (牌大) or oversized hand/stakes; English stakes chooses one. Annotation keeps both relevant domains; audio/context may establish 玩太大? Do not silently correct."
+    },
+    {
+      "trackId": 28,
+      "line": 17,
+      "kind": "orthography",
+      "detail": "目是死不冥的 reshapes 死不瞑目; 冥 should normally be 瞑 in this meaning. English gets the intended idiom. Public note now discusses meaning rather than transcript workflow."
+    },
+    {
+      "trackId": 28,
+      "line": 21,
+      "kind": "transcript",
+      "detail": "拿着我的头号招摇撞骗 is semantically awkward. 头衔 (title/status) is a plausible intended noun but needs audio verification; existing top billing translation should not be treated as settled."
+    },
+    {
+      "trackId": 31,
+      "line": 9,
+      "kind": "transcript",
+      "detail": "手里攥着的是大结果 has an unclear handheld object; 大结果 does not yield an idiomatic reading. Remove placeholder note rather than invent weapon/prize; verify audio."
+    },
+    {
+      "trackId": 31,
+      "line": 35,
+      "kind": "interpretation",
+      "detail": "肉变菜了 permits literal prepared-food reading and slang 菜=unskilled beside 懒得玩了. Do not assert it definitely means becoming a novice or a specific game."
+    },
+    {
+      "trackId": 37,
+      "line": 13,
+      "kind": "orthography",
+      "detail": "丛生到死 is an apparent homophone transcription typo for 从生到死. Existing English already translates from birth to death; Chinese correction can be made separately with provenance."
+    },
+    {
+      "trackId": 30,
+      "line": 74,
+      "kind": "reference",
+      "detail": "Prior formula attested in esports fan headline; public note now explains fit with Jackzebra’s verified name张正凯, without treating the track as being about Clearlove."
+    },
+    {
+      "trackId": 30,
+      "line": 66,
+      "kind": "research-access",
+      "detail": "Repository temporarily returned404 during review. Both paired sayings and sexual gloss independently verified in the indexed PDF table, printedp338. Public citation now points directly to this PDF."
+    },
+    {
+      "track": 39,
+      "line": 53,
+      "kind": "transcript",
+      "detail": "从都 is likely 从来都; 带耳钉 conventionally 戴耳钉. Existing meaning clear, do not devote a reader-facing annotation to spelling noise."
+    },
+    {
+      "track": 42,
+      "line": 14,
+      "kind": "transcript",
+      "detail": "Mixed-English crack rn remains unclear; do not generate wordplay or intent from it without audio/editor verification."
+    },
+    {
+      "track": 46,
+      "line": 37,
+      "kind": "transcript",
+      "detail": "建基层 is likely 建几层 (how many floors); English already takes this reading. Removed note dwelling on typo; unresolved audio verification remains."
+    },
+    {
+      "track": 46,
+      "line": 55,
+      "kind": "transcript",
+      "detail": "Abrupt 她 in 我祈求好一辈子 天注定她就想死 not secure enough for close-reading pronoun claims. Leave lyrics/timing untouched."
+    },
+    {
+      "track": 49,
+      "line": 38,
+      "kind": "chronology",
+      "detail": "Earlier 王中王 officially released2024, currenttape2026, lyric says去年. Do not infer exact recordingyear or claim directcalendar match; revisednote treats song-relative rhetorical time."
+    },
+    {
+      "track": 54,
+      "line": 5,
+      "kind": "unverified-biography",
+      "detail": "The song claims a self-funded20,000 freeperformance andtravelreimbursement. These are lyricclaims, not independentlydocumentedexpenses; notes explain rhetoricwithoutpresentingledgerasverifiedfact."
+    }
+  ],
+  "researchSources": [
+    {
+      "url": "https://www.moe.gov.cn/srcsite/A10/s7002/201507/t20150706_192618.html",
+      "label": "Education Ministry: prohibition on paid tutoring by serving schoolteachers (2015)",
+      "claims": "The 2015 notice forbids schools and serving primary/secondary teachers from organizing or inducing pupils into paid supplementary classes; contextualizes the specific conflict in Sunshine, not an allegation about a real teacher.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=1057&webMd=1",
+      "label": "Ministry of Education idiom dictionary: 金玉其外，敗絮其中",
+      "claims": "Traces the saying to Liu Ji’s orange-seller parable, where handsome fruit with rotten interiors becomes criticism of officials with impressive standing and poor substance.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=-47&la=0&webMd=1",
+      "label": "Ministry of Education idiom dictionary: 對牛彈琴",
+      "claims": "Standard meaning addresses an uncomprehending audience; early story also concerns adapting one’s expression to an audience rather than only declaring that audience stupid.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.nppa.gov.cn/xxfb/tzgs/202108/t20210830_666285.html",
+      "label": "National Press and Publication Administration: anti-addiction gaming notice (2021)",
+      "claims": "防沉迷 is an established policy/technical vocabulary concerning minors and online games; regulations existed before this song. The lyric’s question should not be presented as factual absence of law.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=23419&powerMode=1",
+      "label": "Ministry of Education dictionary: 江湖",
+      "claims": "Beyond rivers/lakes, 江湖 names the environment/social world one inhabits and occurs in the expression about being unable to act freely within it.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://news.sohu.com/20070123/n247792288.shtml",
+      "label": "Tongling Daily: a primary school’s campaign against playground parodies (2007)",
+      "claims": "School head describes children replacing the schoolbag in 上学歌 with an explosives bag and school-destruction lyrics; documents both oral circulation and adult objection. Does not establish an originator.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.sohu.com/a/198115389_267700",
+      "label": "Nankai Youth League: jianbing rhyme (2017)",
+      "claims": "Article uses the yo/check-it-out/jianbing-set rhyme, supporting recognition of the rewritten hawker chant in Coffin Baby.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://static.nfnews.com/content/202407/13/c9075050.html",
+      "label": "Southern Weekly / Nanfang Plus: 嘻嘻不嘻嘻 (2024)",
+      "claims": "Documents the paired meme expression as a switch from laughter to not laughing.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=187&la=0&webMd=2",
+      "label": "Ministry of Education idiom dictionary: 如魚得水",
+      "claims": "The idiom includes finding a suitable environment or compatible person; its fish-water image is not the duck of the official English title.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=136382&la=1&powerMode=0",
+      "label": "Ministry of Education dictionary: 如膠似漆",
+      "claims": "Glue-and-lacquer image describes close, inseparable relationships; applying it to a pillow shifts that intimacy into a domestic object.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://music.apple.com/us/song/%E9%9D%92%E6%A5%BC-feat-jackzebra/1842182592",
+      "label": "Apple Music: 青楼 songwriting credits",
+      "claims": "Song credits identify jackzebra’s name as 张正凯; 凯 in 凯神 corresponds to Kai in his name, supporting the nickname explanation.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.forest.gov.tw/0008041",
+      "label": "Taiwan Forestry and Nature Conservation Agency: cycads",
+      "claims": "Identifies cycads as the plants commonly called 鐵樹; avoids treating the idiom as a tree literally made of iron.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.sdcourt.gov.cn/jningweisfy/385991/385992/7896537/index.html",
+      "label": "Shandong court: explanation of 套牌 in a plate-sharing case",
+      "claims": "Describes using another vehicle’s plate identity, supporting the language gloss in Grey; no legal advice or claims about an actual offense by the artist.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.researchgate.net/publication/381046692_lajiaoyimingcifangyancixingchayideleixingjichengyin_Morphology_of_%27chilli_pepper%27_nouns_in_Sinitic_languages_a_typological_study",
+      "label": "Linguistic study: regional words for chili peppers",
+      "claims": "Research abstract locates 海椒 especially in Sichuan/Chongqing, supporting the regional language note; not evidence of travel or a specific meal.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://ggxy.cuc.edu.cn/2018/1105/c1895a49468/page.htm",
+      "label": "Communication University of China: Du Mu’s Qingming",
+      "claims": "The poem opening quoted in track 21; Qingming as the season for honoring the dead.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=4923&la=0&webMd=1",
+      "label": "Ministry of Education: 黃粱一夢",
+      "claims": "Idiom from Shen Jiji’s pillow tale; a lifetime of advancement unfolds before a pot of millet finishes cooking.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.marqueebrands.com/antisocialsocialclub",
+      "label": "Anti Social Social Club: brand owner’s profile",
+      "claims": "The exact English phrase is a streetwear brand name.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.hengdianworld.com/_about/general.html",
+      "label": "Hengdian World Studios: official overview",
+      "claims": "Large film studio complex with purpose-built historical settings.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://yllhj.beijing.gov.cn/ztxx/lhysh/cy/202101/t20210122_2229681.shtml",
+      "label": "Beijing Forestry and Parks Bureau: ornamental walnuts",
+      "claims": "Walnuts are paired and repeatedly handled; shells acquire color/patina; a leisure and collection practice.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.jka.or.jp/en/faq-en/",
+      "label": "Japan Karate Association: karate-dō",
+      "claims": "Karate-dō literally means the way of the empty hand.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=337&la=0&webMd=1",
+      "label": "Ministry of Education: 初出茅廬",
+      "claims": "Idiom refers to Zhuge Liang’s departure from seclusion, now used for people entering society without experience.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://andersen.sdu.dk/vaerk/hersholt/TheEmperorsNewClothes_e.html",
+      "label": "Hans Christian Andersen Centre: The Emperor’s New Clothes",
+      "claims": "Adults maintain the fiction of clothing; a child voices its absence.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://eprints.nottingham.ac.uk/63762/",
+      "label": "Wan-Qi Li, Cyberbullying in China (Nottingham PhD thesis, 2020)",
+      "claims": "Search-indexed thesis lexical table records 好吃不如饺子 / 好玩不过嫂子 with sexual meaning; supports existence/use, not origin or Jackzebra’s intent.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.pi.fyi/p/jackzebra",
+      "label": "Jackzebra’s own recommendations for Perfectly Imperfect (2025)",
+      "claims": "Artist says he plays Temple Run on planes, trains and before shows; this supports the lyric’s precise airplane/game detail.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.dazeddigital.com/music/article/66520/1/jackzebra-is-the-auto-tuned-voice-of-post-industrial-china",
+      "label": "Jackzebra interview with Dazed (April 2025)",
+      "claims": "Artist explicitly names Top Boy and The Wire among TV he watches while discussing learning English online. No specific plot claim.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.10086.cn/",
+      "label": "China Mobile: 神州行 brand and 我看行 slogan",
+      "claims": "Official site pairs 神州行 with 我看行, supplying an advertising-language background for track20 lines15–16.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.zdic.net/hans/盲流",
+      "label": "Hanzi dictionary: 盲流",
+      "claims": "Dictionary locates the label in rural-to-urban migration; supports social register, not artist biography.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://andersen.sdu.dk/vaerk/hersholt/TheEmperorsNewClothes_e.html",
+      "label": "Hans Christian Andersen Centre: The Emperor’s New Clothes",
+      "claims": "The ruler parades in nonexistent clothes while his subjects pretend to see them; the child states his nakedness.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/search.php?word=%E9%9C%89",
+      "label": "CUHK Chinese Character Database: 霉",
+      "claims": "霉 denotes mould; 霉運 means bad luck, supporting the English-title lexical connection.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=126801&la=0&powerMode=0",
+      "label": "Ministry of Education dictionary: 重蹈覆轍",
+      "claims": "Idiom depicts returning to the road where a cart overturned; repeating the same mistake.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=83881&q=1&word=%E9%A4%85",
+      "label": "Ministry of Education dictionary: 畫餅充饑",
+      "claims": "Drawn food cannot satisfy real hunger; dictionary gives empty reputation and imaginary consolation senses.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://cdata2.chunjae.co.kr/webdata_110/chunjae/_CMS/BookData/Solution/2025/01/%2822%EA%B0%9C%EC%A0%95%29%EC%A4%91%EB%93%B1_%ED%8F%89%EA%B0%80%EB%AC%B8%EC%A0%9C_%EA%B5%AD%EC%96%B41-1%28%EC%A0%95%ED%98%B8%EC%9B%85%29_%EC%A0%95%EB%8B%B5%EA%B3%BC%ED%95%B4%EC%84%A4%281%29.pdf",
+      "label": "Chunjae Education: Korean-language workbook explanations",
+      "claims": "오냐 is an interjection answering a younger/lower-status speaker’s call, question, or request; not the neutral polite yes.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.interviewmagazine.com/music/rapper-jackzebra-went-apeshit-with-this-playlist",
+      "label": "Interview: Jackzebra’s own listening and film picks",
+      "claims": "In June2025 artist Q&A, names White Oleander as film he wishes to soundtrack and 南部犯罪份子 as favorite SoundCloud rapper. These are career-context facts, not confirmation of this song’s intended film reference.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://jyj.ezhou.gov.cn/xwzx/jydt/202105/t20210513_397429.html",
+      "label": "Ezhou Education Bureau: an 忆苦思甜 activity",
+      "claims": "Direct institutional example of 忆苦思甜 as educational practice connecting hardship remembrance to present gratitude; no claim that lyric references this particular activity.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://ctext.org/wiki.pl?chapter=622284&if=en",
+      "label": "Journey to the West, chapter 14",
+      "claims": "Sun Wukong’s headband tightens when Tang Sanzang recites its spell; discipline/obedience enforced through pain.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.fmprc.gov.cn/wjbxw_new/202201/t20220113_10491726.shtml",
+      "label": "Ministry of Foreign Affairs: diplomatic formula in use",
+      "claims": "A March2021 official statement pairs 严正抗议 and 强烈谴责. Cited solely to establish register, not identify a lyric target.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.bilibili.com/video/BV1hs411D7vu/",
+      "label": "Bilibili: 2015 remix of the get-up-and-party catchphrase",
+      "claims": "Creator-posted April27,2015 Vocaloid remix demonstrates meme/song circulation of 睡你麻痹起来嗨 before this album; no origin claim.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202306/t20230609_501276.html",
+      "label": "Ministry of Human Resources: recruitment traps",
+      "claims": "Primary2023 advisory defines unlicensed/false recruitment intermediaries and deceptive promises, establishing employment context for 黑中介.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://paper.people.com.cn/hwbwap/html/2023-07/12/content_26005308.htm",
+      "label": "People’s Daily: a factory worker’s account of starting with 打螺丝",
+      "claims": "Interviewee describes beginning with screw-fastening as basic manufacturing work; supports literal labor context.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=47405&la=0&powerMode=0",
+      "label": "Ministry of Education dictionary: 獨善其身",
+      "claims": "Records both keeping one’s own moral integrity and later sense of attending only to oneself while neglecting others.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://cyxzxy.tskjxy.edu.cn/info/1017/2022.htm",
+      "label": "Taishan College of Science and Technology: a tofu-making workshop",
+      "claims": "Firsthand workshop report records 小葱拌豆腐—一清二白, supporting established tofu/clear-white innocence wordplay. Lyric does not quote full proverb.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://ctext.org/text.pl?if=gb&node=4868&show=parallel",
+      "label": "Sima Qian: the Hongmen banquet in 項羽本紀",
+      "claims": "Fan Zeng instructs Xiang Zhuang to use a sword dance to kill Liu Bang at Xiang Yu’s feast; Xiang Bo blocks the attempt.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.gzhsh.com/",
+      "label": "皇上皇: official brand and product site",
+      "claims": "Company describes1933origin and Cantonese curedmeat/sausage products; brandwordplay fact.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://static.cninfo.com.cn/finalpage/2024-08-14/1220863164.PDF",
+      "label": "Shuanghui: 2024 half-year report",
+      "claims": "Company’s own report identifies 双汇王中王; confirms 王中王 sausage product name.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=115603&la=0&powerMode=0",
+      "label": "Ministry of Education dictionary: 照妖鏡",
+      "claims": "Mirror shows disguised demons’ original forms; figuratively distinguishes truth/falsehood and good/evil.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://music.apple.com/us/song/1631476431",
+      "label": "Yisa Yu: 时间煮雨, Tiny Times film song",
+      "claims": "Artist release metadata identifies title, YisaYu,2013,TinyTimes connection; no musical interpolation claim.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://music.apple.com/cn/song/1084343894",
+      "label": "Zhang Chu: 孤独的人是可耻的",
+      "claims": "Confirms ZhangChu songtitle, against which Sweet’s repeated negation and final伟大 make a textual answer.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%83%E6%AD%A5%E8%A9%A9",
+      "label": "Seven-Step Poem: transmitted texts",
+      "claims": "Versions in ShishuoXinyu and RomanceofThreeKingdoms use beans cooking over stems from same root; closing couplet exacttextualreference, traditionalCaoZhi attribution.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.pokemon.co.jp/game/other/gb-blue/",
+      "label": "Pokémon: Pocket Monsters Blue",
+      "claims": "OfficialJapanese titleポケットモンスター / PocketMonsters; paired精灵+口袋 evokes Chinese PocketMonsters wordplay. Allusion is reading, not artisttestimony.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.shuanghui.net/page-32.html",
+      "label": "Shuanghui: official meat-products overview",
+      "claims": "Direct manufacturer page names 双汇王中王 among its processed meat products. Readable replacement for corporate report.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://house.people.com.cn/n1/2016/0723/c164220-28578900.html",
+      "label": "Xinhua2016 reporting, hosted by People’s Daily",
+      "claims": "Describes 城市套路深，我要回农村 as circulating saying. Indexed fulltext verified after direct fetch timeout.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.ygfamily.com/en/news/notice/1862",
+      "label": "YG Entertainment: G-DRAGON 2013 tour release",
+      "claims": "Identifies him as BIGBANG leader and soloartist; lists Crayon in tracklist. Effie proximity is editorial possibleecho, not officialexplanation.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://press.givenchy.com/maison-givenchy/?lang=eng",
+      "label": "Givenchy’s own house history",
+      "claims": "Identifies French fashion house and founder; note onlyusesFrenchfashionhouseidentity.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://kikokostadinov.com/collections/men",
+      "label": "Kiko Kostadinov menswear",
+      "claims": "Official menswear catalog supports compressed designername reference. No specific garmentidentified.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://www.sansebastianfestival.com/2023/awards_and_jury_members/offical_selection_jury_members/1/20957/in",
+      "label": "San Sebastián Festival: Fan Bingbing",
+      "claims": "Official jurymember biography supports screenactor identity; lyriccomparison editorial.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=3302&la=0&powerMode=0",
+      "label": "MOE concise dictionary: 平淡",
+      "claims": "Ordinary, unremarkable, not spectacular or unusual; does not necessarilyimplymisery.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://jackzebra.org/",
+      "label": "Artist’s official catalog",
+      "claims": "Kuru/Elipropperr production, Yoyi/User116 lineup, earlier王中王 and汉奸 title, 弓长张 EP and认真你就输了 title. Only factual metadataused; close readings independent.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "url": "https://sustainability.dolcegabbana.com/wp-content/uploads/2024/12/DolceGabbanas-Code-of-Ethics.pdf",
+      "label": "Dolce&Gabbana: official company code",
+      "claims": "Company intro identifies D&G and Dolce&Gabbana fashion group; only identity used in note.",
+      "accessed": "2026-10-04"
+    }
+  ],
+  "totals": {
+    "before": 403,
+    "after": 729,
+    "added": 344,
+    "removed": 18,
+    "rewritten": 258,
+    "words": 38265
+  }
+}

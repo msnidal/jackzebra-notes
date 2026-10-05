@@ -30,6 +30,8 @@ for t in album['tracks']:
         raw=__import__('html').unescape(re.sub('<[^>]+>','',text))
         assert line['zh'] in raw and line['en'] in raw
     for note in t['notes']:assert escape(note['body'],quote=True) in text
+    assert escape(t['intro'],quote=True) in text
+    for context in album['researchContext']:assert escape(context['body'],quote=True) in text
     assert len([link for link in p.links if link.startswith('/zhuang-zhuang/')])>=56
     for link in p.links:
         target=urlsplit(link)

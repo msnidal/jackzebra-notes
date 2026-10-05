@@ -1,0 +1,391 @@
+{
+  "commit": "ed1210d24f1c61f5fd79f813de70b0c8199243ab",
+  "album_sha256": "e56368494a8c0d400e900acffad9c0436831f9e2da3464475f552927b8b19371",
+  "tracks": [
+    {
+      "id": 1,
+      "title": "Sour",
+      "notes": 10,
+      "uniqueLyrics": 33,
+      "noteWords": 429
+    },
+    {
+      "id": 2,
+      "title": "Blessed",
+      "notes": 10,
+      "uniqueLyrics": 25,
+      "noteWords": 483
+    },
+    {
+      "id": 3,
+      "title": "Sunshine",
+      "notes": 9,
+      "uniqueLyrics": 32,
+      "noteWords": 409
+    },
+    {
+      "id": 4,
+      "title": "Discipline",
+      "notes": 6,
+      "uniqueLyrics": 29,
+      "noteWords": 268
+    },
+    {
+      "id": 5,
+      "title": "Coffin Baby",
+      "notes": 9,
+      "uniqueLyrics": 41,
+      "noteWords": 386
+    },
+    {
+      "id": 6,
+      "title": "Poker Face",
+      "notes": 10,
+      "uniqueLyrics": 43,
+      "noteWords": 455
+    },
+    {
+      "id": 7,
+      "title": "Debt",
+      "notes": 6,
+      "uniqueLyrics": 35,
+      "noteWords": 215
+    },
+    {
+      "id": 8,
+      "title": "Doge",
+      "notes": 6,
+      "uniqueLyrics": 12,
+      "noteWords": 225
+    },
+    {
+      "id": 9,
+      "title": "Voices",
+      "notes": 4,
+      "uniqueLyrics": 23,
+      "noteWords": 125
+    },
+    {
+      "id": 10,
+      "title": "Cube",
+      "notes": 8,
+      "uniqueLyrics": 31,
+      "noteWords": 298
+    },
+    {
+      "id": 11,
+      "title": "Like A Duck To Water",
+      "notes": 6,
+      "uniqueLyrics": 22,
+      "noteWords": 243
+    },
+    {
+      "id": 12,
+      "title": "Kai",
+      "notes": 8,
+      "uniqueLyrics": 31,
+      "noteWords": 340
+    },
+    {
+      "id": 13,
+      "title": "Grey",
+      "notes": 9,
+      "uniqueLyrics": 35,
+      "noteWords": 322
+    },
+    {
+      "id": 14,
+      "title": "Jianghu",
+      "notes": 9,
+      "uniqueLyrics": 49,
+      "noteWords": 344
+    },
+    {
+      "id": 15,
+      "title": "Haribo",
+      "notes": 5,
+      "uniqueLyrics": 15,
+      "noteWords": 187
+    },
+    {
+      "id": 16,
+      "title": "Whatever Whatever",
+      "notes": 9,
+      "uniqueLyrics": 44,
+      "noteWords": 345
+    },
+    {
+      "id": 17,
+      "title": "Monoplay",
+      "notes": 12,
+      "uniqueLyrics": 56,
+      "noteWords": 465
+    },
+    {
+      "id": 18,
+      "title": "Stab",
+      "notes": 7,
+      "uniqueLyrics": 27,
+      "noteWords": 261
+    },
+    {
+      "id": 19,
+      "title": "Hitman",
+      "notes": 8,
+      "uniqueLyrics": 32,
+      "noteWords": 297
+    },
+    {
+      "id": 20,
+      "title": "The Lone Wolf",
+      "notes": 7,
+      "uniqueLyrics": 38,
+      "noteWords": 222
+    },
+    {
+      "id": 21,
+      "title": "Anti Social Social Club",
+      "notes": 7,
+      "uniqueLyrics": 42,
+      "noteWords": 253
+    },
+    {
+      "id": 22,
+      "title": "Throat",
+      "notes": 4,
+      "uniqueLyrics": 17,
+      "noteWords": 124
+    },
+    {
+      "id": 23,
+      "title": "Bedbug Party",
+      "notes": 9,
+      "uniqueLyrics": 40,
+      "noteWords": 389
+    },
+    {
+      "id": 24,
+      "title": "Self Pity",
+      "notes": 7,
+      "uniqueLyrics": 30,
+      "noteWords": 285
+    },
+    {
+      "id": 25,
+      "title": "Bakery Session",
+      "notes": 3,
+      "uniqueLyrics": 29,
+      "noteWords": 132
+    },
+    {
+      "id": 26,
+      "title": "Fox",
+      "notes": 8,
+      "uniqueLyrics": 49,
+      "noteWords": 349
+    },
+    {
+      "id": 27,
+      "title": "LMFAO",
+      "notes": 3,
+      "uniqueLyrics": 16,
+      "noteWords": 103
+    },
+    {
+      "id": 28,
+      "title": "Snatch",
+      "notes": 8,
+      "uniqueLyrics": 37,
+      "noteWords": 382
+    },
+    {
+      "id": 29,
+      "title": "Sanmao",
+      "notes": 4,
+      "uniqueLyrics": 19,
+      "noteWords": 177
+    },
+    {
+      "id": 30,
+      "title": "Dumpling",
+      "notes": 6,
+      "uniqueLyrics": 26,
+      "noteWords": 279
+    },
+    {
+      "id": 31,
+      "title": "Topboy",
+      "notes": 10,
+      "uniqueLyrics": 55,
+      "noteWords": 418
+    },
+    {
+      "id": 32,
+      "title": "Kneel",
+      "notes": 6,
+      "uniqueLyrics": 34,
+      "noteWords": 268
+    },
+    {
+      "id": 33,
+      "title": "Crosswalk",
+      "notes": 8,
+      "uniqueLyrics": 45,
+      "noteWords": 345
+    },
+    {
+      "id": 34,
+      "title": "Lemonade",
+      "notes": 4,
+      "uniqueLyrics": 38,
+      "noteWords": 186
+    },
+    {
+      "id": 35,
+      "title": "Rabbit",
+      "notes": 6,
+      "uniqueLyrics": 37,
+      "noteWords": 238
+    },
+    {
+      "id": 36,
+      "title": "Soymilk",
+      "notes": 6,
+      "uniqueLyrics": 23,
+      "noteWords": 253
+    },
+    {
+      "id": 37,
+      "title": "Book",
+      "notes": 5,
+      "uniqueLyrics": 19,
+      "noteWords": 208
+    },
+    {
+      "id": 38,
+      "title": "All In",
+      "notes": 7,
+      "uniqueLyrics": 31,
+      "noteWords": 269
+    },
+    {
+      "id": 39,
+      "title": "Mold Prize",
+      "notes": 4,
+      "uniqueLyrics": 38,
+      "noteWords": 102
+    },
+    {
+      "id": 40,
+      "title": "Im Tired",
+      "notes": 6,
+      "uniqueLyrics": 34,
+      "noteWords": 192
+    },
+    {
+      "id": 41,
+      "title": "Macaron",
+      "notes": 11,
+      "uniqueLyrics": 37,
+      "noteWords": 321
+    },
+    {
+      "id": 42,
+      "title": "Life Life Life",
+      "notes": 13,
+      "uniqueLyrics": 61,
+      "noteWords": 445
+    },
+    {
+      "id": 43,
+      "title": "Ashtray",
+      "notes": 8,
+      "uniqueLyrics": 39,
+      "noteWords": 273
+    },
+    {
+      "id": 44,
+      "title": "Oleander",
+      "notes": 2,
+      "uniqueLyrics": 17,
+      "noteWords": 63
+    },
+    {
+      "id": 45,
+      "title": "Curse",
+      "notes": 7,
+      "uniqueLyrics": 28,
+      "noteWords": 256
+    },
+    {
+      "id": 46,
+      "title": "Ghost Dog",
+      "notes": 16,
+      "uniqueLyrics": 52,
+      "noteWords": 572
+    },
+    {
+      "id": 47,
+      "title": "Tonight",
+      "notes": 3,
+      "uniqueLyrics": 31,
+      "noteWords": 98
+    },
+    {
+      "id": 48,
+      "title": "Numb",
+      "notes": 5,
+      "uniqueLyrics": 18,
+      "noteWords": 150
+    },
+    {
+      "id": 49,
+      "title": "Emperor",
+      "notes": 8,
+      "uniqueLyrics": 25,
+      "noteWords": 276
+    },
+    {
+      "id": 50,
+      "title": "Morning",
+      "notes": 6,
+      "uniqueLyrics": 31,
+      "noteWords": 189
+    },
+    {
+      "id": 51,
+      "title": "Never Give Up",
+      "notes": 3,
+      "uniqueLyrics": 12,
+      "noteWords": 91
+    },
+    {
+      "id": 52,
+      "title": "Mirrors",
+      "notes": 6,
+      "uniqueLyrics": 38,
+      "noteWords": 168
+    },
+    {
+      "id": 53,
+      "title": "Ume",
+      "notes": 11,
+      "uniqueLyrics": 53,
+      "noteWords": 402
+    },
+    {
+      "id": 54,
+      "title": "Inspiration",
+      "notes": 13,
+      "uniqueLyrics": 38,
+      "noteWords": 495
+    },
+    {
+      "id": 55,
+      "title": "Sweet",
+      "notes": 12,
+      "uniqueLyrics": 64,
+      "noteWords": 472
+    }
+  ]
+}

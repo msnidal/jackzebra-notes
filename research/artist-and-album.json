@@ -1,0 +1,102 @@
+{
+  "reviewedAt": "2026-10-04",
+  "scope": "Editorial annotation expansion across all 55 tracks; existing lyrics and timings retained.",
+  "principles": [
+    "Explain a particular word, joke, shift or connection; avoid generic paraphrase.",
+    "State linguistic facts directly; anchor interpretation in textual details.",
+    "Use artist statements for specific context, not as a key that makes every lyric autobiographical.",
+    "Do not make unverified diagnoses, identify unnamed targets, or turn local references into claims about all Chinese people.",
+    "Check exact bilingual phrase anchors and keep repeated lyrics consistent."
+  ],
+  "sources": [
+    {
+      "id": "official-catalog",
+      "label": "Artist discography and production credits",
+      "url": "https://jackzebra.org/",
+      "kind": "Primary artist catalog",
+      "verified": "Zhuang Zhuang has 55 tracks; Aghast is credited throughout tracks 19–28. Earlier releases establish recurring collaborators and titles."
+    },
+    {
+      "id": "release",
+      "label": "Surf Gang — Zhuang Zhuang Mixtape",
+      "url": "https://surfgang.nyc/releases/zhuang-zhuang-mixtape",
+      "kind": "Label release",
+      "verified": "October 2, 2026; SG106. Official order and guest credits."
+    },
+    {
+      "id": "static",
+      "label": "Benny Sun — Jackzebra: Interview",
+      "url": "https://staticmag.org/benny-sun/jackzebra-interview/",
+      "kind": "Artist interview, conducted in Mandarin",
+      "verified": "Rejects national-representative framing. Mixtapes permit freer release; describes vulnerability making 王中王. Collaboration began through producer friendships."
+    },
+    {
+      "id": "fader",
+      "label": "Tasbeeh Herwees — Jackzebra’s global ennui",
+      "url": "https://www.thefader.com/2025/06/02/jackzebra-king-of-kings-surf-gang-interview/njackzebra",
+      "kind": "Artist interview, June 2, 2025",
+      "verified": "Name Zhang Zhengkai; discusses meanings available in Mandarin and his online musical community."
+    },
+    {
+      "id": "paper",
+      "label": "Ivan Guzman — jackzebra Is Not Endangered",
+      "url": "https://www.papermag.com/jackzebra-mastermind",
+      "kind": "Artist interview, October 15, 2025",
+      "verified": "Calls emotional writing spontaneous. Describes moving from online beat exchanges to sessions in person, and his first Mandarin song in 2021."
+    },
+    {
+      "id": "sabukaru",
+      "label": "Sabukaru Meets Jackzebra: Above, Beyond & Between",
+      "url": "https://sabukaru.online/articles/sabukaru-meets-jackzebra-above-beyond-amp-between",
+      "kind": "Artist interview, June 30, 2025",
+      "verified": "Describes Above & Beyond as a collection of producer friends, with his words accompanying their work. This statement concerns that earlier mixtape."
+    },
+    {
+      "id": "avyss",
+      "label": "Yiqing — Jackzebra timeline and quick Q&A",
+      "url": "https://avyss-magazine.com/2024/10/31/54399/",
+      "kind": "Artist interview in Japanese, October 31, 2024",
+      "verified": "Discusses writing while singing over repeated beats, mental images, Mandarin ambiguity, and 626company with 1kbps and Ricky."
+    },
+    {
+      "id": "pi",
+      "label": "Jackzebra — A Taste of Taste",
+      "url": "https://www.pi.fyi/p/jackzebra",
+      "kind": "Artist-authored recommendations, September 3, 2025",
+      "verified": "Temple Run while travelling and before shows; enjoys privacy and hiding; names Inland Empire and a song by friend 1kbps."
+    },
+    {
+      "id": "interview",
+      "label": "Julian Ribeiro — Rapper Jackzebra Went Apeshit With This Playlist",
+      "url": "https://www.interviewmagazine.com/music/rapper-jackzebra-went-apeshit-with-this-playlist",
+      "kind": "Artist questionnaire, June 23, 2025",
+      "verified": "Names White Oleander as a desired soundtrack project, and 南部犯罪份子 as favorite SoundCloud rapper."
+    },
+    {
+      "id": "id",
+      "label": "Sahir Ahmed — Jackzebra Goes To The Zoo",
+      "url": "https://i-d.co/article/jackzebra-goes-to-the-zoo/",
+      "kind": "Artist interview, January 26, 2026",
+      "verified": "Describes everyday life and boredom as inspiration, and positive in-person chemistry with Surf Gang. Also praises 南部犯罪份子."
+    },
+    {
+      "id": "bloodzebra",
+      "label": "Solomon PM — Bloodzebra Q&A",
+      "url": "https://www.dazeddigital.com/music/article/70213/1/bloodzebra-unites-jackson-pollock-and-agnes-martin-chinese-rap",
+      "kind": "Interviews with Jackzebra, Bloodz Boi and .cutspace, May 6, 2026",
+      "verified": "Jack describes scripted life in NPC and ambient hotel noise as inspiration. These statements concern Bloodzebra, not Zhuang Zhuang."
+    },
+    {
+      "id": "dazed-2025",
+      "label": "Solomon PM — Jackzebra interview",
+      "url": "https://www.dazeddigital.com/music/article/66520/1/jackzebra-is-the-auto-tuned-voice-of-post-industrial-china",
+      "kind": "Artist interview, April 2, 2025",
+      "verified": "Names Top Boy and The Wire as viewing; recalls retail and food-service jobs. Describes Xujing upbringing and musical writing from everyday listening. Article framing is distinct from artist testimony."
+    }
+  ],
+  "unresolved": [
+    "No primary explanation located for the Zhuang Zhuang title. Do not invent one.",
+    "Interview dates for first Surf Gang meetings vary; avoid an exact unified timeline.",
+    "Public comments about this being the last mixtape are secondary reports, not verified artist testimony in this pass."
+  ]
+}
