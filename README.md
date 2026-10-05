@@ -25,6 +25,8 @@ The artist's current official mixtape listing uses English titles. The generator
 
 Phrase bubbles show only the explanation and expandable Sources. The phrase remains highlighted in the lyrics. The data retains editorial note headings for archival purposes; they are not displayed in bubbles or used as new generated headings. Without JavaScript, the complete bilingual lyrics and expandable notes remain readable, with crawlable song links. Audio connection and playback require JavaScript.
 
+The song starts at the top of the page, without a site masthead. The bottom player offers Add audio for tracks that have no connected recording; the song title opens the track picker (or the album page without JavaScript). Change audio and About this edition are in the track-list footer.
+
 Lyrics follow automatically when audio plays. Notes and other overlays temporarily hold the page; closing them catches up with the recording. Scrolling the lyrics or switching Follow off keeps manual reading in control, including across pause/resume. Each newly selected song starts with Follow enabled.
 
 ## Publication
