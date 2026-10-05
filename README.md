@@ -29,7 +29,7 @@ Phrase bubbles show only the explanation and expandable Sources. The phrase rema
 
 Push to `main` on `msnidal/jackzebra-notes`. `.github/workflows/pages.yml` builds, validates, uploads only `dist`, and deploys GitHub Pages. No paid runtime, model calls, accounts, recordings, or server backend are required. GitHub Pages settings must use GitHub Actions and the custom domain `jackzebranotes.com`. The `CNAME` file is also included for portability; Actions deployments use the domain configured in repository settings.
 
-Namecheap apex records point to GitHub Pages (`185.199.108.153`, `.109.153`, `.110.153`, `.111.153`); `www` points to `msnidal.github.io`. Keep email records unchanged. Enable Enforce HTTPS after GitHub issues the certificate. Submit `https://jackzebranotes.com/sitemap.xml` in the verified Google Search Console property.
+Namecheap apex records point to GitHub Pages (`185.199.108.153`, `.109.153`, `.110.153`, `.111.153`); `www` points to `msnidal.github.io`. Keep email records unchanged. Enable Enforce HTTPS after GitHub issues the certificate. Google Search Console has a verified domain property for `jackzebranotes.com`; `https://jackzebranotes.com/sitemap.xml` has been submitted. The initial fetch ran before HTTPS was ready, so confirm a successful fetch after certificate issuance. GitHub’s HTTPS certificate was still queued at launch. Once issued, enable Enforce HTTPS in Settings → Pages (or use `gh api -X PUT repos/msnidal/jackzebra-notes/pages -F https_enforced=true`).
 
 ## Checks
 
