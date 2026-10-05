@@ -59,7 +59,12 @@ dialog p{font-size:16px}dialog .dialog-heading{position:sticky;top:-30px;backgro
 #track-dialog .album-art{width:60px;float:left;margin-right:16px}#track-dialog .art-tag{display:none}
 #track-dialog .album-heading{margin:0 0 22px;min-height:60px;padding-top:4px}
 #track-dialog .album-heading h2{font-size:19px}#track-dialog .tracklist-heading{clear:both;margin-top:16px}
-#track-dialog .track-row{min-height:48px}#track-dialog .track-name{white-space:normal;overflow-wrap:anywhere;line-height:1.45}
+#track-dialog .track-row{min-height:48px;color:var(--text)}#track-dialog .track-row.active{color:var(--accent)}#track-dialog .track-name{white-space:normal;overflow-wrap:anywhere;line-height:1.45}
+@media(min-width:961px){
+ #track-dialog[open]{display:flex;flex-direction:column;width:560px;max-width:calc(100vw - 64px);height:min(720px,calc(100dvh - 64px));max-height:calc(100dvh - 64px);padding:0;overflow:hidden}
+ #track-dialog>.dialog-heading{position:static;flex-shrink:0;margin:0;padding:12px 24px;border-bottom:1px solid var(--line)}
+ #track-dialog .album-panel{min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:20px 24px 24px}
+}
 #about-button,#manage-audio{display:flex;margin-top:12px;letter-spacing:0;font-size:14px;color:var(--muted)}
 @media(min-width:961px){.player{padding-top:10px}.transport-buttons{gap:14px}}
 @media(max-width:960px){

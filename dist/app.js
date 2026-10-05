@@ -44,13 +44,16 @@ for(const dialog of document.querySelectorAll('dialog')){
  dialog.addEventListener('close',resumeFollow);
 }
 $('#connect-dialog').addEventListener('close',()=>{state.pendingPlay=false;});
-function closeTrackList(restore=true){const dialog=$('#track-dialog');if(dialog.open)dialog.close();$('.workspace').prepend($('#album-panel'));$('#album-toggle').setAttribute('aria-expanded','false');if(restore)$('#album-toggle').focus({preventScroll:true});}
-function openTrackList(){holdFollow();closeNotes(false);const dialog=$('#track-dialog');dialog.append($('#album-panel'));dialog.showModal();$('#album-toggle').setAttribute('aria-expanded','true');const selected=$('#track-list .active');selected?.scrollIntoView({block:'center',behavior:'instant'});selected?.focus({preventScroll:true});}
-$('#track-dialog').addEventListener('close',()=>{if(!$('#track-dialog').open){$('.workspace').prepend($('#album-panel'));$('#album-toggle').setAttribute('aria-expanded','false');}});
+let sidebarScroll=0;
+function restoreTrackPanel(){const panel=$('#album-panel');if(panel.parentElement===$('#track-dialog')){$('.workspace').prepend(panel);panel.scrollTop=sidebarScroll;}$('#album-toggle').setAttribute('aria-expanded','false');}
+function closeTrackList(restore=true){const dialog=$('#track-dialog');if(dialog.open)dialog.close();restoreTrackPanel();if(restore)$('#album-toggle').focus({preventScroll:true});}
+function openTrackList(){holdFollow();closeNotes(false);const dialog=$('#track-dialog');sidebarScroll=$('#album-panel').scrollTop;dialog.append($('#album-panel'));dialog.showModal();$('#album-toggle').setAttribute('aria-expanded','true');const selected=$('#track-list .active');selected?.scrollIntoView({block:'center',behavior:'instant'});selected?.focus({preventScroll:true});}
+$('#track-dialog').addEventListener('close',()=>{if(!$('#track-dialog').open)restoreTrackPanel();});
 compactLayout.addEventListener('change',()=>{if($('#track-dialog').open)closeTrackList(false);closeNotes(false);});
 const hasTiming = t => !!t?.lyrics.some(l=>Number.isFinite(l.start)&&l.kind!=='section');
 function setConnection(){const n=state.files.size,connected=state.files.has(state.track?.id);document.body.classList.toggle('reading-only',!connected);$('#connect-button').hidden=connected;$('#manage-audio').hidden=!n;$('#connection-state').textContent=n?'Playing from your device':'Read while you listen';if(state.track)$('#follow-button').hidden=!connected||!hasTiming(state.track);}
-function renderTrackList(){const active=state.track?.id;$('#track-list').innerHTML=state.album.tracks.map(t=>`<a href="${trackPath(t)}" class="track-row ${t.id===active?'active':''}" data-track="${t.id}" aria-current="${t.id===active?'true':'false'}" aria-label="${esc(t.id+'. '+t.title+(t.lyrics.length?', lyrics available':''))}"><span class="num">${String(t.id).padStart(2,'0')}</span><span class="track-name">${esc(t.title)}</span><span class="track-time">${fmt(t.duration)}</span></a>`).join('');$('#coverage-count').textContent=`${state.album.tracks.filter(t=>t.lyrics.length).length} with lyrics`;}
+let trackListReady=false;
+function renderTrackList(){const active=state.track?.id;if(!trackListReady){$('#track-list').innerHTML=state.album.tracks.map(t=>`<a href="${trackPath(t)}" class="track-row" data-track="${t.id}" aria-label="${esc(t.id+'. '+t.title+(t.lyrics.length?', lyrics available':''))}"><span class="num">${String(t.id).padStart(2,'0')}</span><span class="track-name">${esc(t.title)}</span><span class="track-time">${fmt(t.duration)}</span></a>`).join('');$('#coverage-count').textContent=`${state.album.tracks.filter(t=>t.lyrics.length).length} with lyrics`;trackListReady=true;}for(const row of $('#track-list').children){const selected=Number(row.dataset.track)===active;row.classList.toggle('active',selected);row.setAttribute('aria-current',String(selected));}}
 function renderContext(noteId=null){
  const t=state.track,n=t.notes.find(n=>n.id===noteId);state.note=noteId;
  document.querySelectorAll('#lyrics [data-note]').forEach(b=>b.setAttribute('aria-expanded',String(b.dataset.note===noteId)));
