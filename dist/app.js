@@ -72,7 +72,7 @@ function phraseMarkup(text,notes,language){
  }
  ranges.sort((a,b)=>a.start-b.start);
  let cursor=0,html='';
- for(const {start,end,n} of ranges){html+=esc(text.slice(cursor,start))+`<button type="button" class="phrase-note" data-note="${esc(n.id)}" aria-label="Explain ${esc(text.slice(start,end))}" aria-controls="note-popover" aria-haspopup="dialog" aria-expanded="false">${esc(text.slice(start,end))}</button>`;cursor=end;}
+ for(const {start,end,n} of ranges){html+=esc(text.slice(cursor,start))+`<a href="#note-${esc(n.id)}" role="button" class="phrase-note" data-note="${esc(n.id)}" aria-label="Explain ${esc(text.slice(start,end))}" aria-controls="note-popover" aria-haspopup="dialog" aria-expanded="false">${esc(text.slice(start,end))}</a>`;cursor=end;}
  html+=esc(text.slice(cursor));
  html+=fallback.map(n=>`<button class="note-marker" data-note="${esc(n.id)}" aria-label="Explain this phrase" aria-controls="note-popover" aria-haspopup="dialog" aria-expanded="false">${state.track.notes.indexOf(n)+1}</button>`).join('');
  return html;
@@ -108,7 +108,10 @@ async function importFiles(files){if(!files.length)return;$('#import-status').te
 $('#connect-button').onclick=()=>showDialog('#connect-dialog');$('#source-button').onclick=sourceInfo;$('#audio-files').onchange=e=>importFiles([...e.target.files]);
 const plainClick=e=>e.button===0&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey;
 $('#track-list').onclick=e=>{const b=e.target.closest('[data-track]');if(b&&plainClick(e)){e.preventDefault();selectTrack(Number(b.dataset.track));}};
-$('#lyrics').onclick=e=>{const note=e.target.closest('[data-note]'),seek=e.target.closest('[data-seek]'),read=e.target.closest('[data-read-track]');if(note)openNote(note.dataset.note,note);if(read)selectTrack(Number(read.dataset.readTrack));if(seek){if(state.loadedId===state.track.id)audio.currentTime=Number(seek.dataset.seek);else toast('Connect and play the track first to jump to a line.');}};
+$('#lyrics').onclick=e=>{const note=e.target.closest('[data-note]'),seek=e.target.closest('[data-seek]'),read=e.target.closest('[data-read-track]');if(note){e.preventDefault();openNote(note.dataset.note,note);}if(read)selectTrack(Number(read.dataset.readTrack));if(seek){if(state.loadedId===state.track.id)audio.currentTime=Number(seek.dataset.seek);else toast('Connect and play the track first to jump to a line.');}};
+// Native buttons are atomic inline boxes: links let a phrase wrap with its sentence.
+// Enter activates the link natively; Space preserves its announced button behavior.
+$('#lyrics').addEventListener('keydown',e=>{const phrase=e.target.closest('a.phrase-note');if(phrase&&e.code==='Space'){e.preventDefault();if(!e.repeat)phrase.click();}});
 $('#lyrics').addEventListener('pointerover',e=>{const b=e.target.closest('[data-note]');if(b)highlightRelated(b.dataset.note);});
 $('#lyrics').addEventListener('pointerout',e=>{const b=e.relatedTarget?.closest?.('[data-note]');highlightRelated(b?.dataset.note||state.note);});
 $('#lyrics').addEventListener('focusin',e=>{const b=e.target.closest('[data-note]');if(b)highlightRelated(b.dataset.note);});
