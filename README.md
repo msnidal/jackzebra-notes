@@ -25,6 +25,8 @@ The artist's current official mixtape listing uses English titles. The generator
 
 Phrase bubbles show only the explanation and expandable Sources. The phrase remains highlighted in the lyrics. The data retains editorial note headings for archival purposes; they are not displayed in bubbles or used as new generated headings. Without JavaScript, the complete bilingual lyrics and expandable notes remain readable, with crawlable song links. Audio connection and playback require JavaScript.
 
+Lyrics follow automatically when audio plays. Notes and other overlays temporarily hold the page; closing them catches up with the recording. Scrolling the lyrics or switching Follow off keeps manual reading in control, including across pause/resume. Each newly selected song starts with Follow enabled.
+
 ## Publication
 
 Push to `main` on `msnidal/jackzebra-notes`. `.github/workflows/pages.yml` builds, validates, uploads only `dist`, and deploys GitHub Pages. No paid runtime, model calls, accounts, recordings, or server backend are required. GitHub Pages settings must use GitHub Actions and the custom domain `jackzebranotes.com`. The `CNAME` file is also included for portability; Actions deployments use the domain configured in repository settings.
