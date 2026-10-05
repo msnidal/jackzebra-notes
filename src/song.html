@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#151713">
+  <meta name="description" content="Listen closely to Jackzebra. Zhuang Zhuang Mixtape with bilingual lyrics and notes, alongside your own audio.">
+  <title>Jackzebra — Listening notes</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23151713'/%3E%3Cpath d='M8 9h16L10 23h14' fill='none' stroke='%23d6f88b' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="reading-only">
+  <a class="skip-link" href="#reader">Skip to lyrics</a>
+  <header class="masthead">
+    <button id="album-toggle" class="icon-button mobile-only" aria-label="Open track list" aria-expanded="false" aria-controls="track-dialog" aria-haspopup="dialog"></button>
+    <a href="/" class="wordmark" aria-label="Jackzebra Notes home">jackzebra notes</a>
+    <div class="masthead-actions"><span class="edition">ZHUANG ZHUANG / 2026</span><button id="connect-button" class="connect-button">Use your audio</button><button id="info-button" class="icon-button" aria-label="About Jackzebra Notes"></button></div>
+  </header>
+  <div class="workspace">
+    <aside id="album-panel" class="album-panel" aria-label="Album and tracks">
+      <div class="album-art"><img src="/assets/cover.jpg" alt="Zhuang Zhuang Mixtape cover: a green praying mantis on a white railing"><span class="art-tag">THE MIXTAPE</span></div>
+      <div class="album-heading"><h2><a href="/zhuang-zhuang/">Zhuang Zhuang</a></h2><span>55 tracks <span aria-hidden="true">·</span> <span id="album-runtime">1 hr 47 min</span></span></div>
+      <div class="tracklist-heading"><span>TRACKLIST</span><span id="coverage-count"></span></div>
+      <nav id="track-list" aria-label="Tracks"></nav>
+      <div class="album-footer"><a href="https://surfgangrecords.bandcamp.com/album/zhuang-zhuang-mixtape" target="_blank" rel="noopener">Listen / support on Bandcamp</a><br>SURF GANG RECORDS · 2026<button id="mobile-info" class="text-button mobile-only">About Jackzebra Notes</button></div>
+    </aside>
+    <main id="reader" tabindex="-1">
+      <section class="song-top"><div class="eyebrow"><span id="track-number">01 / 55</span><span id="track-length">1:25</span></div><h1 id="song-title">Sour</h1><p id="song-original-title" lang="zh" hidden></p><div class="song-byline"><span id="song-credit">jackzebra</span><button id="song-notes-toggle" class="text-button">Song notes</button></div></section>
+      <div class="reader-toolbar"><div class="language-control" role="group" aria-label="Lyric language"><button data-language="zh" aria-pressed="false">Original</button><button data-language="both" aria-pressed="true">Both</button><button data-language="en" aria-pressed="false">English</button></div><button id="follow-button" class="follow-button" aria-label="Follow lyrics" aria-pressed="false">Follow<span class="follow-detail"> lyrics</span></button></div>
+      <div id="draft-label" class="draft-label" hidden><span>Tap an underlined phrase for context</span><button id="source-button" class="text-button">About this text</button></div>
+      <div class="column-labels" aria-hidden="true"><span>原文 / Original</span><span>English</span></div>
+      <section id="lyrics" class="lyrics" aria-label="Lyrics"></section>
+      <div class="song-end"><span class="end-mark">/</span><a id="next-song" class="next-song" href="/zhuang-zhuang/blessed/"><span>NEXT TRACK</span><strong></strong></a></div>
+    </main>
+
+  </div>
+  <footer class="player" aria-label="Music player"><div class="now-playing"><img src="/assets/cover.jpg" alt=""><div><strong id="player-title">Sour</strong><span id="player-credit">jackzebra</span></div><span id="audio-quality" class="audio-quality">FLAC</span></div><div class="transport"><div class="transport-buttons"><button id="previous" class="icon-button" aria-label="Previous track"></button><button id="play" class="play-button" aria-label="Play"></button><button id="next" class="icon-button" aria-label="Next track"></button><button id="repeat" class="icon-button repeat" aria-label="Repeat track" aria-pressed="false"></button></div><div class="timeline"><span id="elapsed">0:00</span><input id="seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek through track"><span id="duration">1:25</span></div></div><a id="bandcamp-listen" class="bandcamp-listen" href="https://surfgangrecords.bandcamp.com/album/zhuang-zhuang-mixtape" target="_blank" rel="noopener">Listen on Bandcamp</a><div class="player-options"><button id="mute" class="icon-button" aria-label="Mute"></button><input id="volume" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume"><span id="connection-state">Your audio, your device</span></div></footer>
+  <dialog id="note-popover" popover="auto" aria-label="Song note" tabindex="-1"><div class="note-header"><span id="note-kind"></span><button id="note-close" class="icon-button" aria-label="Close note"></button></div><div id="note-content"></div></dialog>
+  <dialog id="track-dialog" aria-labelledby="track-dialog-title"><div class="dialog-heading"><h2 id="track-dialog-title">Tracks</h2><button class="icon-button close-dialog" aria-label="Close track list"></button></div></dialog>
+  <audio id="audio" preload="metadata" playsinline></audio>
+  <dialog id="connect-dialog" aria-labelledby="connect-title"><div class="dialog-heading"><span class="eyebrow">YOUR COPY</span><button class="icon-button close-dialog" aria-label="Close"></button></div><h2 id="connect-title">Listen with your copy.</h2><p>Add your Bandcamp download to play alongside the lyrics. Your files stay on this device.</p><label class="drop-area" id="drop-area"><span class="drop-icon"></span><strong>Choose your album</strong><span>Bandcamp ZIP, FLAC, MP3, M4A, or WAV</span><input id="audio-files" type="file" accept=".zip,.flac,.mp3,.m4a,.wav,.ogg" multiple></label><p class="small" id="import-status">On your phone, choose the download from Files. Reading needs no account or purchase. You can also listen on Bandcamp, Spotify, or elsewhere and keep this page open.</p><a class="external-link" href="https://surfgangrecords.bandcamp.com/album/zhuang-zhuang-mixtape" target="_blank" rel="noopener">Get the album on Bandcamp</a></dialog>
+  <dialog id="info-dialog" aria-labelledby="info-title"><div class="dialog-heading"><span class="eyebrow">JACKZEBRA NOTES</span><button class="icon-button close-dialog" aria-label="Close"></button></div><h2 id="info-title">Jackzebra Notes</h2><p>This companion brings English translations and original lyrics together with notes on phrasing, wordplay, and references. Your audio stays on your device.</p><p>Tap an underlined phrase in either language for wordplay, slang, or a reference. The matching phrase lights up across the two columns. Sources and transcription details live under “About this text.”</p><p>Tap a timestamp to jump to a lyric. “Follow lyrics” follows the recording; scrolling or opening a note lets you read at your own pace.</p><p class="keyboard-help">Press <kbd>Space</kbd> to play or pause. <kbd>←</kbd> and <kbd>→</kbd> seek five seconds.</p><a href="https://jackzebra.org/" target="_blank" rel="noopener">Artist website</a><span class="link-separator">/</span><a href="https://surfgangrecords.bandcamp.com/album/zhuang-zhuang-mixtape" target="_blank" rel="noopener">Bandcamp</a></dialog>
+  <dialog id="source-dialog" aria-label="Lyrics, timing, and sources"><div class="dialog-heading"><span class="eyebrow">SOURCES &amp; REVIEW</span><button class="icon-button close-dialog" aria-label="Close"></button></div><div id="source-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="/app.js"></script>
+</body></html>

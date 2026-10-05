@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env*
+.local-media/
+*.flac
+*.mp3
+*.wav
+*.m4a
+*.ogg
+*.zip
