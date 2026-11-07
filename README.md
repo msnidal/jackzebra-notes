@@ -52,6 +52,8 @@ Checks cover all 55 static routes, complete bilingual lyrics and note bodies, un
 
 The October 4 editorial pass expanded the collection from 403 to 729 annotations, rewrote 258 retained notes, and replaced all 55 song introductions. It combines close reading of Chinese phrasing, sounds and registers with artist interviews, primary reference material and connections across the catalog. Notes remain independent, AI-assisted interpretations; interview evidence is distinguished from readings of the songs. Lyrics and timing data were preserved. The research directory records the [artist research](research/artist-and-album.json), [editorial review](research/editorial-review.json), and [per-song changes and remaining transcription issues](research/editorial-report.json).
 
+The November 7 close-reading pass reviewed every song in full in the main Codex session, without delegating song readings. It rewrote all 55 overviews and 244 of the 729 phrase annotations, focusing on speakers, narrative movement, contradictions, actual endings and connections across songs. It corrects, among other things, resolved-ending readings of “Doge” and “Oleander” and keeps guest verses distinct from Jackzebra's own voice. The [review record](research/close-reading/review.json) documents scope, research and preserved data; the numbered files beside it contain each song's reading and exact revisions. Original lyrics, English renderings, pinyin, phrase anchors and timings were preserved. These remain editorial interpretations, not artist-confirmed explanations.
+
 Purchased Bandcamp ZIP/FLAC/MP3/M4A/WAV/OGG files are read locally by the browser. They are not uploaded, stored by GitHub, or retained after a reload.
 
 ## Pinyin

@@ -1,0 +1,109 @@
+{
+  "scope": "Personal close reading of all 55 songs: full source lyrics, English renderings, existing annotations and artist context. No delegated song reviews.",
+  "tracks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+  ],
+  "date": "2026-11-07",
+  "baselineCommit": "d8ce2556ef3eea2b2311eb1768b8e56bc677a7d0",
+  "reviewedTracks": 55,
+  "revisedIntroductions": 55,
+  "revisedAnnotations": 244,
+  "totalAnnotations": 729,
+  "method": [
+    "Read every source-language lyric and English rendering in sequence, with only adjacent identical repetitions collapsed in the reading packets.",
+    "Read every existing annotation, then revise the song overview and the interpretively important phrase notes.",
+    "Distinguish artist, guest and dramatized speakers; track returns, reversals, endings and cross-song connections.",
+    "Use artist interviews as context without treating his other projects or unnamed disputes as explanations of particular lines.",
+    "Retain useful language/reference notes and their sources. Interpretations are editorial close readings, not artist-confirmed statements."
+  ],
+  "preserved": [
+    "All 3360 lyric rows and translations",
+    "Pinyin and phrase offsets",
+    "Audio timings and playback behavior",
+    "729 existing annotation anchors"
+  ],
+  "contextReadThisPass": [
+    {
+      "url": "https://staticmag.org/benny-sun/jackzebra-interview/",
+      "use": "Artist on mixtape composition, autonomy and resistance to being made a representative figure."
+    },
+    {
+      "url": "https://i-d.co/article/jackzebra-goes-to-the-zoo/",
+      "use": "Artist on everyday sources, process and collaboration; not a track-by-track explanation of this release."
+    },
+    {
+      "url": "https://www.dazeddigital.com/music/article/70213/1/bloodzebra-unites-jackson-pollock-and-agnes-martin-chinese-rap",
+      "use": "Distinguish statements about another project from the present album; naturalness and persona."
+    },
+    {
+      "url": "https://jackzebra.org/",
+      "use": "Official track sequence and credits."
+    }
+  ],
+  "keyCorrections": [
+    "Doge returns to pressure and its unanswered question after the musical outlet.",
+    "Oleander offers permission to leave mid-song, then returns to one-sided attachment.",
+    "Sweet continues after the lonely-people refrain into audience pressure and the wish for ignorance.",
+    "Guest verses retain their own speakers, especially on Mold Prize, Macaron, Life Life Life and Ghost Dog."
+  ],
+  "validation": {
+    "content": "All 55 overviews and 244 revised notes verified against previous album; all other track fields preserved.",
+    "site": "55 complete static pages, sitemap, canonicals, links and phrase anchors pass validation.",
+    "timing": "Playback checks and all 3178 imported lyric onset checks pass.",
+    "browser": "Mobile 390×844: all 55 song overviews and each song’s longest revised phrase note opened and matched to content; no popup horizontal overflow or viewport escape. Desktop 1440×1000: revised popup verified. Screenshots visually reviewed. English guest-verse links selected from the visible column."
+  }
+}
