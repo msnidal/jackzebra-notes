@@ -149,3 +149,6 @@ html:not(.enhanced) .player .transport,html:not(.enhanced) .player>.connect-butt
  .now-playing .track-picker-entry>span{margin:0;color:inherit;font-size:12px;font-weight:500;line-height:14px}
  .track-picker:hover .track-picker-entry,.track-picker:focus-visible .track-picker-entry{border-color:var(--accent);color:var(--accent)}
 }
+
+/* Pinyin uses the reader’s Latin typeface and wraps naturally between syllables. */
+.lyric-line .chinese[lang="zh-Latn"]{font-family:inherit;letter-spacing:normal}

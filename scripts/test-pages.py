@@ -28,7 +28,7 @@ for t in album['tracks']:
     for line in t['lyrics']:
         # Phrase links can split the text, but raw HTML text must preserve every lyric.
         raw=__import__('html').unescape(re.sub('<[^>]+>','',text))
-        assert line['zh'] in raw and line['en'] in raw
+        assert line['pinyin'] in raw and line['en'] in raw
     for note in t['notes']:assert escape(note['body'],quote=True) in text
     assert escape(t['intro'],quote=True) in text
     for context in album['researchContext']:assert escape(context['body'],quote=True) in text

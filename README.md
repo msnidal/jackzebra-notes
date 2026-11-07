@@ -1,6 +1,6 @@
 # Jackzebra Notes
 
-A public listening companion at https://jackzebranotes.com: original lyrics, independent English translations, and sourced phrase notes for all 55 songs on **Zhuang Zhuang Mixtape**. The name and album structure leave room for later releases.
+A public listening companion at https://jackzebranotes.com: tone-marked pinyin, independent English translations, and sourced phrase notes for all 55 songs on **Zhuang Zhuang Mixtape**. The name and album structure leave room for later releases.
 
 ## Build and preview
 
@@ -21,9 +21,9 @@ Open `http://127.0.0.1:4173/`. Use `?manual` on a song URL to test the hosted re
 
 Edit the template rather than generated HTML. Run the builder after edits. Song links are real `/zhuang-zhuang/song-name/` URLs. Normal in-page navigation uses History API to preserve connected audio; modifier-clicks still open normal links. Old `#track=55` links on the new domain resolve to the new song route. The earlier private prototype remains separate.
 
-The artist's current official mixtape listing uses English titles. The generator supports an optional verified `originalTitle` rather than inventing Chinese release titles. Chinese lyric text is present in the static pages and discoverable directly.
+The artist's current official mixtape listing uses English titles. The generator supports an optional verified `originalTitle` rather than inventing Chinese release titles. Pinyin is present in the static pages and remains readable without JavaScript. The original Chinese transcription is preserved in album.json for source fidelity and editorial work.
 
-Phrase bubbles show only the explanation and expandable Sources. The phrase remains highlighted in the lyrics. The data retains editorial note headings for archival purposes; they are not displayed in bubbles or used as new generated headings. Without JavaScript, the complete bilingual lyrics and expandable notes remain readable, with crawlable song links. Audio connection and playback require JavaScript.
+Phrase bubbles show only the explanation and expandable Sources. The phrase remains highlighted in the lyrics. The data retains editorial note headings for archival purposes; they are not displayed in bubbles or used as new generated headings. Without JavaScript, the complete pinyin/English lyrics and expandable notes remain readable, with crawlable song links. Audio connection and playback require JavaScript.
 
 The song starts at the top of the page, without a site masthead. The bottom player offers Add audio for tracks that have no connected recording; a labeled Tracks control in the mobile player opens the track picker (or the album page without JavaScript). The song title remains part of the same tap target. Change audio and About this edition are in the track-list footer.
 
@@ -53,3 +53,9 @@ Checks cover all 55 static routes, complete bilingual lyrics and note bodies, un
 The October 4 editorial pass expanded the collection from 403 to 729 annotations, rewrote 258 retained notes, and replaced all 55 song introductions. It combines close reading of Chinese phrasing, sounds and registers with artist interviews, primary reference material and connections across the catalog. Notes remain independent, AI-assisted interpretations; interview evidence is distinguished from readings of the songs. Lyrics and timing data were preserved. The research directory records the [artist research](research/artist-and-album.json), [editorial review](research/editorial-review.json), and [per-song changes and remaining transcription issues](research/editorial-report.json).
 
 Purchased Bandcamp ZIP/FLAC/MP3/M4A/WAV/OGG files are read locally by the browser. They are not uploaded, stored by GitHub, or retained after a reload.
+
+## Pinyin
+
+The original-lyrics column and its phrase links use tone-marked, syllable-spaced pinyin. English passages and other non-Chinese text retain their original spelling. Source Chinese, English translations, note bodies, and timings remain unchanged. Note labels also use pinyin; explanations may still quote Chinese characters when discussing their meaning.
+
+To regenerate after a source-lyric edit, install `pypinyin==0.55.0` in a Python environment, run `python scripts/generate-pinyin.py`, then rebuild the pages. Generated readings are checked into `dist/album.json`, so normal builds and visitors need no conversion dependency. `scripts/pinyin-readings.json` records reviewed contextual readings for ambiguous characters. Annotation readings are sliced from the converted full lyric line to preserve context and anchors. These are Mandarin reading aids, not a new audio transcription or a representation of every dialect pronunciation.

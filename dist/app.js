@@ -59,14 +59,14 @@ function renderContext(noteId=null){
  document.querySelectorAll('#lyrics [data-note]').forEach(b=>b.setAttribute('aria-expanded',String(b.dataset.note===noteId)));
  $('#note-popover').classList.toggle('phrase-context',!!n);$('#note-kind').textContent='';$('#note-kind').hidden=true;
  if(n){$('#note-content').innerHTML=`<p>${esc(n.body)}</p>${n.sources?.length?`<details class="note-sources"><summary>Sources</summary>${n.sources.map(s=>`<a target="_blank" rel="noopener" href="${esc(s.url)}">${esc(s.label)}</a>`).join('')}</details>`:''}`;}
- else{$('#note-content').innerHTML=`<h2>${esc(t.title)}</h2>${t.intro?`<p>${esc(t.intro)}</p>`:''}<dl class="note-credits"><dt>Artist</dt><dd>${esc(t.artist)}</dd><dt>Production</dt><dd>${esc(t.producer||'—')}</dd><dt>Release</dt><dd>October 2, 2026</dd></dl>${t.notes.length?`<div class="song-note-list">${t.notes.map((n,i)=>`<button data-note="${esc(n.id)}"><span>${i+1}</span>${esc(n.phrase?.zh||n.original||`Note ${i+1}`)}</button>`).join('')}</div>`:''}<a class="note-credit-link" href="https://jackzebra.org/" target="_blank" rel="noopener">Album credits</a>`;}
+ else{$('#note-content').innerHTML=`<h2>${esc(t.title)}</h2>${t.intro?`<p>${esc(t.intro)}</p>`:''}<dl class="note-credits"><dt>Artist</dt><dd>${esc(t.artist)}</dd><dt>Production</dt><dd>${esc(t.producer||'—')}</dd><dt>Release</dt><dd>October 2, 2026</dd></dl>${t.notes.length?`<div class="song-note-list">${t.notes.map((n,i)=>`<button data-note="${esc(n.id)}"><span>${i+1}</span>${esc(n.pinyinLabel||n.phrase?.en||`Note ${i+1}`)}</button>`).join('')}</div>`:''}<a class="note-credit-link" href="https://jackzebra.org/" target="_blank" rel="noopener">Album credits</a>`;}
 }
 function positionNote(){const pop=$('#note-popover');if(!noteIsOpen())return;if(compactLayout.matches){pop.style.left='';pop.style.top='';return;}const anchor=state.noteTrigger?.getBoundingClientRect();const width=Math.min(440,innerWidth-32);const height=pop.offsetHeight;const floor=$('.player').getBoundingClientRect().top-14;const x=Math.min(Math.max(16,(anchor?.left||innerWidth/2)-width/2),innerWidth-width-16);const below=(anchor?.bottom||100)+12;const y=below+height<floor?below:Math.max(16,(anchor?.top||floor)-height-12);pop.style.left=`${x}px`;pop.style.top=`${y}px`;}
 function phraseMarkup(text,notes,language){
  const ranges=[],fallback=[];
  for(const n of notes){
   const phrase=n.phrase?.[language]??(language==='zh'&&text.includes(n.original)?n.original:'');
-  const start=phrase?text.indexOf(phrase):-1;
+  const start=phrase?(language==='pinyin'&&Number.isInteger(n.pinyinOffset)?Array.from(text).slice(0,n.pinyinOffset).join('').length:text.indexOf(phrase)):-1;
   if(start<0||ranges.some(r=>start<r.end&&start+phrase.length>r.start)){fallback.push(n);continue;}
   ranges.push({start,end:start+phrase.length,n});
  }
@@ -83,10 +83,10 @@ function renderLyrics(){
  $('#draft-label').hidden=!t.lyrics.length;$('#follow-button').disabled=!hasTiming(t);$('#follow-button').hidden=!state.files.has(t.id)||!hasTiming(t);
  if(!t.lyrics.length){$('#lyrics').innerHTML='<div class="empty-lyrics"><h2>Lyrics are unavailable.</h2></div>';return;}
  $('#lyrics').innerHTML=t.lyrics.map((l,i)=>{
-  const notes=t.notes.filter(n=>{const anchor=t.lyrics[n.anchorLine];return n.anchorLine===i||(anchor.zh===l.zh&&anchor.en===l.en);}),lang=/[가-힣]/u.test(l.zh)?'ko':/[\u3400-\u9fff]/u.test(l.zh)?'zh':'en';
+  const notes=t.notes.filter(n=>{const anchor=t.lyrics[n.anchorLine];return n.anchorLine===i||(anchor.zh===l.zh&&anchor.en===l.en);}),lang=/[가-힣]/u.test(l.zh)?'ko':/[\u3400-\u9fff]/u.test(l.zh)?'zh-Latn':'en';
   const section=l.kind==='section',same=l.zh===l.en,timed=Number.isFinite(l.start)&&!section;
   const gap=i&&timed&&Number.isFinite(t.lyrics[i-1].start)&&l.start-t.lyrics[i-1].start>6;
-  return `${gap?'<div class="verse-gap" aria-hidden="true"></div>':''}<div class="lyric-line${section?' lyric-section':''}${same?' same-text':''}" id="line-${i}" data-line="${i}">${timed?`<button class="line-time" data-seek="${l.start}" aria-label="Jump to ${fmt(l.start)}">${fmt(l.start)}</button>`:''}<p class="chinese" lang="${lang}">${phraseMarkup(l.zh,notes,'zh')}</p><p class="english">${phraseMarkup(l.en,notes,'en')}</p></div>`;
+  return `${gap?'<div class="verse-gap" aria-hidden="true"></div>':''}<div class="lyric-line${section?' lyric-section':''}${same?' same-text':''}" id="line-${i}" data-line="${i}">${timed?`<button class="line-time" data-seek="${l.start}" aria-label="Jump to ${fmt(l.start)}">${fmt(l.start)}</button>`:''}<p class="chinese" lang="${lang}">${phraseMarkup(l.pinyin,notes,'pinyin')}</p><p class="english">${phraseMarkup(l.en,notes,'en')}</p></div>`;
  }).join('');
 }
 function highlightRelated(id){document.querySelectorAll('#lyrics [data-note]').forEach(b=>b.classList.toggle('is-related',!!id&&b.dataset.note===id));}

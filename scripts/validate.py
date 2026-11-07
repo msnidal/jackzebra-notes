@@ -25,7 +25,7 @@ for t in album['tracks']:
         assert timing['communityFallbackLines']==sum(l.get('timingSource')=='community' for l in lyrics)
         assert timing['method'] and timing['models'] and timing['generatedAt']
         assert all(l.get('timingSource') in ['ai','community','unresolved'] for l in lyrics)
-    assert all(l['en'].strip() and l['zh'].strip() for l in t['lyrics']),t['title']
+    assert all(l['pinyin'].strip() and not re.search(r'[\u3400-\u9fff]',l['pinyin']) and l['en'].strip() and l['zh'].strip() for l in t['lyrics']),t['title']
     assert all(0<=n['anchorLine']<len(t['lyrics']) for n in t['notes']),t['title']
     assert len({n['id'] for n in t['notes']})==len(t['notes'])
     if t['lyrics']:
@@ -38,15 +38,16 @@ for t in album['tracks']:
         assert all(s['url'].startswith('https://') for s in n.get('sources',[]))
         assert n.get('phrase') and any(n['phrase'].values()),(t['title'],n['id'],'missing phrase')
         for lang,phrase in n['phrase'].items():
-            assert lang in ['zh','en'] and phrase and phrase in t['lyrics'][n['anchorLine']][lang],(t['title'],n['id'],lang)
+            assert lang in ['zh','en','pinyin'] and phrase and phrase in t['lyrics'][n['anchorLine']][lang],(t['title'],n['id'],lang)
     for row in t['lyrics']:
-        notes=[n for n in t['notes'] if all(t['lyrics'][n['anchorLine']][lang]==row[lang] for lang in ['zh','en'])]
-        for lang in ['zh','en']:
+        notes=[n for n in t['notes'] if all(t['lyrics'][n['anchorLine']][lang]==row[lang] for lang in ['zh','en','pinyin'])]
+        for lang in ['zh','en','pinyin']:
             ranges=[]
             for n in notes:
                 phrase=n['phrase'].get(lang)
                 if not phrase:continue
-                start=row[lang].index(phrase);end=start+len(phrase)
+                start=n['pinyinOffset'] if lang=='pinyin' else row[lang].index(phrase);end=start+len(phrase)
+                assert row[lang][start:end]==phrase,(t['title'],n['id'],'invalid pinyin offset')
                 assert not any(start<b and end>a for a,b in ranges),(t['title'],n['id'],'overlapping phrases')
                 ranges.append((start,end))
 for f in (root/'dist').rglob('*'):

@@ -23,7 +23,10 @@ def phrase(text,notes,lang):
     ranges=[]
     for n in notes:
         p=n.get('phrase',{}).get(lang)
-        if p and p in text:ranges.append((text.index(p),text.index(p)+len(p),n))
+        if p and p in text:
+            start=n['pinyinOffset'] if lang=='pinyin' else text.index(p)
+            assert text[start:start+len(p)]==p
+            ranges.append((start,start+len(p),n))
     ranges.sort(key=lambda r:r[0]);out='';cursor=0
     for start,end,n in ranges:
         out+=e(text[cursor:start])+f'<a class="phrase-note" href="#note-{e(n["id"])}" aria-label="Explain {e(text[start:end])}">{e(text[start:end])}</a>';cursor=end
@@ -32,14 +35,14 @@ def lyrics(t):
     result=[]
     for i,l in enumerate(t['lyrics']):
         notes=[n for n in t['notes'] if n['anchorLine']==i or all(t['lyrics'][n['anchorLine']][k]==l[k] for k in ['zh','en'])]
-        lang='ko' if re.search('[가-힣]',l['zh']) else 'zh' if re.search('[\u3400-\u9fff]',l['zh']) else 'en'
+        lang='ko' if re.search('[가-힣]',l['zh']) else 'zh-Latn' if re.search('[\u3400-\u9fff]',l['zh']) else 'en'
         classes='lyric-line'+(' lyric-section' if l.get('kind')=='section' else '')+(' same-text' if l['zh']==l['en'] else '')
-        result.append(f'<div class="{classes}" id="line-{i}" data-line="{i}"><p class="chinese" lang="{lang}">{phrase(l["zh"],notes,"zh")}</p><p class="english">{phrase(l["en"],notes,"en")}</p></div>')
+        result.append(f'<div class="{classes}" id="line-{i}" data-line="{i}"><p class="chinese" lang="{lang}">{phrase(l["pinyin"],notes,"pinyin")}</p><p class="english">{phrase(l["en"],notes,"en")}</p></div>')
     return '\n'.join(result)
 def notes(t):
     items=[]
     for n in t['notes']:
-        label=n.get('phrase',{}).get('zh') or n.get('original') or 'Note'
+        label=n['pinyinLabel']
         sources=''.join(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["label"])}</a></li>' for s in n.get('sources',[]))
         items.append(f'<details id="note-{e(n["id"])}"><summary>{e(label)}</summary><p>{e(n["body"])}</p><ul>{sources}</ul></details>')
     sources=' · '.join(f'<a href="{e(s["url"])}">{e(s["label"])}</a>' for s in t['lyricSources'])
@@ -52,7 +55,7 @@ for t in ALBUM['tracks']:
     context=''.join('<p>'+e(n['body'])+'</p><p class="small">'+' · '.join(f'<a href="{e(source["url"])}" target="_blank" rel="noopener">{e(source["label"])}</a>' for source in n['sources'])+'</p>' for n in ALBUM['researchContext'])
     doc=replace_inner(doc,'div','album-context',context)
     doc=re.sub(r'<meta name="description"[^>]+>',lambda _:f'<meta name="description" content="{e(description(t))}">',doc)
-    schema={'@context':'https://schema.org','@type':'WebPage','name':title(t),'url':ORIGIN+path(t),'inLanguage':['en','zh'],'about':{'@type':'MusicRecording','name':t['title'],'isrcCode':t['isrc'],'byArtist':{'@type':'MusicGroup','name':'Jackzebra'},'inAlbum':{'@type':'MusicAlbum','name':ALBUM['title']}}}
+    schema={'@context':'https://schema.org','@type':'WebPage','name':title(t),'url':ORIGIN+path(t),'inLanguage':['en','zh-Latn'],'about':{'@type':'MusicRecording','name':t['title'],'isrcCode':t['isrc'],'byArtist':{'@type':'MusicGroup','name':'Jackzebra'},'inAlbum':{'@type':'MusicAlbum','name':ALBUM['title']}}}
     doc=doc.replace('</head>',head_metadata(title(t),description(t),ORIGIN+path(t),schema)+'</head>')
     values=[('nav','track-list',links(t['id'])),('span','coverage-count','55 with lyrics'),('span','track-number',f'{t["id"]:02} / 55'),('span','track-length',fmt(t['duration'])),('h1','song-title',e(t['title'])),('p','song-original-title',e(t.get('originalTitle',''))),('span','song-credit',e(t['artist']+' · prod. '+t['producer'])),('strong','player-title',e(t['title'])),('span','player-credit',e(t['artist'])),('span','duration',fmt(t['duration'])),('section','lyrics',lyrics(t))]
     for tag,id,value in values:doc=replace_inner(doc,tag,id,value)
